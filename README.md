@@ -48,6 +48,34 @@ Then visit the local URL shown by Wrangler.
 7. In Pages project settings, add custom domain `www.brutechgyan.com`.
 8. In Cloudflare DNS, point `www` CNAME to the Pages domain shown by Cloudflare.
 
+## GitHub Pipeline (Each Push)
+
+This repository includes a GitHub Actions pipeline at:
+
+- `.github/workflows/cloudflare-pages-pipeline.yml`
+
+What it does:
+
+1. Runs validation checks on every push and pull request.
+2. Deploys automatically to Cloudflare Pages on every push.
+   - `main` branch updates production.
+   - Other branches create/update preview deployments.
+
+Required GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+
+How to add secrets:
+
+1. GitHub repo -> `Settings` -> `Secrets and variables` -> `Actions`.
+2. Click `New repository secret`.
+3. Add the two secrets listed above.
+
+Token permission recommendation:
+
+- Cloudflare API token with `Account:Cloudflare Pages:Edit` and `Zone:Zone:Read`.
+
 ## CLI Setup (Recommended)
 
 Use these commands from the project root:
