@@ -131,13 +131,11 @@ Expected response:
 
 ## Cloudflare Web Analytics
 
-The homepage includes the Cloudflare beacon script in `index.html`.
+Web Analytics is enabled from Cloudflare dashboard using automatic setup.
 
 1. Go to Cloudflare dashboard -> `Analytics & Logs` -> `Web Analytics`.
-2. Create/select property for `www.brutechgyan.com`.
-3. Copy the analytics token.
-4. Replace `YOUR_CLOUDFLARE_WEB_ANALYTICS_TOKEN` in `index.html`.
-5. Deploy again.
+2. Confirm `brutechgyan.com` shows `Automatic setup`.
+3. No token snippet is required in `index.html`.
 
 ## Before Going Live
 
