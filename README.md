@@ -106,7 +106,7 @@ curl -X POST https://www.brutechgyan.com/api/contact \
    -d '{
       "name":"Cloudflare Test",
       "email":"contact@brutechgyan.com",
-      "phone":"+91 80456 78900",
+      "phone":"(469) 573-0772",
       "service":"Web Development",
       "message":"Live form API test",
       "website":""
@@ -123,10 +123,10 @@ Expected response:
 
 - Canonical and social meta tags added to pages.
 - `robots.txt` and `sitemap.xml` created.
-- Clean URLs enabled via `_redirects`:
-  - `/privacy`
-  - `/terms`
-  - `/careers`
+- Legal pages are available as:
+   - `/privacy`
+   - `/terms`
+   - `/careers`
 - Security and caching headers configured in `_headers`.
 
 ## Cloudflare Web Analytics
