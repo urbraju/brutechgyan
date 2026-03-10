@@ -1,5 +1,7 @@
 # Brutechgyan Website
 
+[![Cloudflare Pages Pipeline](https://github.com/urbraju/brutechgyan/actions/workflows/cloudflare-pages-pipeline.yml/badge.svg)](https://github.com/urbraju/brutechgyan/actions/workflows/cloudflare-pages-pipeline.yml)
+
 Static marketing website for `www.brutechgyan.com`, including Cloudflare Pages Functions for contact form delivery.
 
 ## Files
