@@ -78,6 +78,14 @@ Token permission recommendation:
 
 - Cloudflare API token with `Account:Cloudflare Pages:Edit` and `Zone:Zone:Read`.
 
+Pipeline troubleshooting:
+
+- If deploy fails with `npx ... exit code 1`, first verify GitHub secrets exist:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+- Verify API token scope includes `Account:Cloudflare Pages:Edit`.
+- Confirm project name in workflow matches Cloudflare Pages project exactly: `brutechgyan-site`.
+
 ## CLI Setup (Recommended)
 
 Use these commands from the project root:
